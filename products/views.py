@@ -9,9 +9,15 @@ from products.models import Products
 @csrf_exempt
 def list_products(request):
     if request.method == 'GET':
-        products = list(products.objects.values())
+        products = list(Products.objects.values())
         return JsonResponse(products, safe=False)
-    
+    else:
+        return JsonResponse(
+            {
+                'error' :'Method not allowed'
+            },
+            status = 405
+        )
 
 @csrf_exempt
 def add_product(request):
@@ -55,5 +61,6 @@ def delete_product(request, product_id):
         return JsonResponse(
             {
                 'message': 'Product deleted successfully'
-            }
+            },
+            status = 200
         )
