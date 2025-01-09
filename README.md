@@ -116,13 +116,7 @@ The application will be available at `http://127.0.0.1:8000/`.
     "name": "Bread",
     "description": "Description of Bread",
     "price": "65.00",
-    "stock": 100,
-  }
-  {
-    "name": "Sugar",
-    "description": "Description of Bread",
-    "price": "250.00",
-    "stock": 50,
+    "stock": 100
   }
 ```
 
