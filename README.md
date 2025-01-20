@@ -26,7 +26,7 @@ This is a simple backend system built with Python, Django, and MySQL to manage a
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository_url>
+git clone <https://github.com/Mashon8945/Inventory-system.git>
 cd inventory_system
 ```
 
